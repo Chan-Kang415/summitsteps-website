@@ -255,7 +255,7 @@ export default function HomePage() {
           <p className="mt-4 max-w-3xl text-lg leading-8 text-muted">
             SummitSteps uses email only for account verification, one-time
             passcodes for login, password reset, and essential account-related
-            notifications.
+            notifications. No unsolicited marketing emails are sent through our account systems.
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
