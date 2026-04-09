@@ -2,87 +2,134 @@ import Link from "next/link";
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-background text-foreground">
       <div className="mx-auto max-w-4xl px-6 py-16 md:px-10">
-        <Link href="/" className="text-sm font-medium text-slate-600 underline">
+        <Link
+          href="/"
+          className="text-sm font-medium text-muted underline underline-offset-4 transition hover:text-card-foreground"
+        >
           ← Back to home
         </Link>
 
-        <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-950">
-          Privacy Policy
-        </h1>
-        <p className="mt-4 text-slate-600">Last updated: April 2026</p>
+        <div className="mt-6 rounded-[28px] border border-border bg-card p-8 md:p-10">
+          <h1 className="text-4xl font-bold tracking-tight text-card-foreground md:text-5xl">
+            Privacy Policy
+          </h1>
+          <p className="mt-3 text-base text-muted">Last updated: April 2026</p>
 
-        <div className="prose prose-slate mt-10 max-w-none">
-          <p>
-            SummitSteps respects your privacy. This Privacy Policy explains what
-            information we collect, how we use it, and how we protect it when
-            you use our website and mobile application.
-          </p>
+          <div className="mt-10 space-y-8 text-base leading-8 text-muted">
+            <section>
+              <p>
+                SummitSteps values your privacy. This Privacy Policy explains
+                what information we collect, how we use it, and how we protect
+                it when you use our website and mobile application.
+              </p>
+            </section>
 
-          <h2>Information we collect</h2>
-          <p>We may collect the following information:</p>
-          <ul>
-            <li>Name and email address provided during account registration</li>
-            <li>Account authentication information, such as one-time passcodes</li>
-            <li>Basic usage data needed to operate and improve the service</li>
-            <li>Activity and progress information related to elevation tracking</li>
-          </ul>
+            <section>
+              <h2 className="text-xl font-semibold text-card-foreground">
+                Information we collect
+              </h2>
+              <ul className="mt-3 list-disc space-y-2 pl-6">
+                <li>Name and email address provided during account registration</li>
+                <li>Authentication data such as one-time passcodes</li>
+                <li>Basic usage data needed to operate and improve the service</li>
+                <li>Activity and progress data related to elevation tracking</li>
+              </ul>
+            </section>
 
-          <h2>How we use your information</h2>
-          <p>We use information we collect to:</p>
-          <ul>
-            <li>Create and manage user accounts</li>
-            <li>Provide secure login and authentication</li>
-            <li>Send one-time passcodes, password resets, and essential notifications</li>
-            <li>Operate, maintain, and improve SummitSteps</li>
-          </ul>
+            <section>
+              <h2 className="text-xl font-semibold text-card-foreground">
+                How we use your information
+              </h2>
+              <ul className="mt-3 list-disc space-y-2 pl-6">
+                <li>Create and manage user accounts</li>
+                <li>Provide secure login and authentication</li>
+                <li>Send one-time passcodes, password reset emails, and essential notifications</li>
+                <li>Operate, maintain, and improve SummitSteps</li>
+              </ul>
+            </section>
 
-          <h2>Email usage</h2>
-          <p>
-            SummitSteps uses email only for transactional purposes, including
-            account verification, one-time passcodes for login, password reset,
-            and essential account-related notifications. We do not send
-            unsolicited marketing emails.
-          </p>
+            <section>
+              <h2 className="text-xl font-semibold text-card-foreground">
+                Email usage
+              </h2>
+              <p className="mt-3">
+                We only send emails that are necessary for using the service,
+                including:
+              </p>
+              <ul className="mt-3 list-disc space-y-2 pl-6">
+                <li>Account verification emails</li>
+                <li>One-time login passcodes</li>
+                <li>Password reset emails</li>
+                <li>Essential account and service notifications</li>
+              </ul>
+              <p className="mt-3">
+                We do not send unsolicited marketing or promotional emails.
+              </p>
+            </section>
 
-          <h2>Third-party services</h2>
-          <p>
-            We may use trusted third-party service providers to support core app
-            functionality, including cloud hosting, authentication, and email
-            delivery. These providers may process information only as needed to
-            provide their services.
-          </p>
+            <section>
+              <h2 className="text-xl font-semibold text-card-foreground">
+                Third-party services
+              </h2>
+              <p className="mt-3">
+                We may use trusted third-party providers, such as cloud hosting,
+                authentication, and email delivery services, to support core app
+                functionality. These providers may process information only as
+                needed to provide their services.
+              </p>
+            </section>
 
-          <h2>Data retention</h2>
-          <p>
-            We retain information only for as long as necessary to operate the
-            service, comply with legal obligations, resolve disputes, and
-            enforce our agreements.
-          </p>
+            <section>
+              <h2 className="text-xl font-semibold text-card-foreground">
+                Data retention
+              </h2>
+              <p className="mt-3">
+                We retain information only for as long as necessary to operate
+                the service, comply with legal obligations, resolve disputes,
+                and enforce our agreements.
+              </p>
+            </section>
 
-          <h2>Security</h2>
-          <p>
-            We take reasonable steps to protect your information and support
-            secure access to user accounts. However, no method of transmission
-            or storage is completely secure.
-          </p>
+            <section>
+              <h2 className="text-xl font-semibold text-card-foreground">
+                Security
+              </h2>
+              <p className="mt-3">
+                We take reasonable steps to protect your information and support
+                secure access to user accounts. However, no method of
+                transmission or storage is completely secure.
+              </p>
+            </section>
 
-          <h2>Your choices</h2>
-          <p>
-            You may contact us if you would like to request updates or deletion
-            of your account information, subject to applicable legal and
-            operational requirements.
-          </p>
+            <section>
+              <h2 className="text-xl font-semibold text-card-foreground">
+                Your choices
+              </h2>
+              <p className="mt-3">
+                You may contact us to request updates or deletion of your
+                account information, subject to applicable legal and operational
+                requirements.
+              </p>
+            </section>
 
-          <h2>Contact</h2>
-          <p>
-            If you have questions about this Privacy Policy, contact us at{" "}
-            <a href="mailto:support@summitstepsapp.com">
-              support@summitstepsapp.com
-            </a>
-            .
-          </p>
+            <section>
+              <h2 className="text-xl font-semibold text-card-foreground">
+                Contact
+              </h2>
+              <p className="mt-3">
+                If you have questions about this Privacy Policy, contact us at{" "}
+                <a
+                  href="mailto:support@summitstepsapp.com"
+                  className="font-medium text-card-foreground underline underline-offset-4"
+                >
+                  support@summitstepsapp.com
+                </a>
+                .
+              </p>
+            </section>
+          </div>
         </div>
       </div>
     </main>
